@@ -42,14 +42,11 @@ function App() {
     setCharacters(characters.filter(char => char.id !== Number(id)))
      }
      
-     const addRandomCharacter = () => {
-      const character = getRandomCharacter();
-      setCharacters(prev => [...prev, character]);
-    }
+     
 
    return (
       <div className='App'>
-      <Nav onSearch={onSearch} addRandom = {addRandomCharacter} />
+      <Nav onSearch={onSearch}/>
       <hr />
       <Cards characters={characters} onClose={onClose} />
       <hr />
