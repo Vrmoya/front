@@ -15,9 +15,10 @@ export default function SearchBar({ onSearch }) {
   }
 
   return (
-    <div>
+    <div> 
       <input type='search' value= {id} placeholder= "Ingresa un ID por favor" onChange = {handleChange} />
-      <button onClick={() => handleSearch(id)}>Agregar</button>
+      <br />
+      <button onClick={() => handleSearch(id)}>Agregar Personaje</button>
     </div>
   );
 }
